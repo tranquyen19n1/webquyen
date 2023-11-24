@@ -1,0 +1,60 @@
+
+.footer-sticky {
+    transition-property: bottom;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0,1,1,1);
+    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100001;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+
+.footer-sticky.hidden {
+    bottom: -80px
+}
+
+.footer-sticky .button.enquire-button {
+    text-transform: uppercase
+}
+
+.footer-sticky .button.icon-top {
+    background: rgba(0,0,0,.55);
+    padding: .50rem 1.4rem;
+    text-align: center
+}
+
+.footer-sticky .button {
+    vertical-align: bottom;
+    position: relative;
+    line-height: 1;
+    padding: .92rem 1.4rem;
+    color: #fff;
+    background: #115aa6
+}
+
+.footer-sticky .button span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.footer-sticky .buttons-wrapper {
+    pointer-events: auto
+}
+
+.footer-sticky .buttons-wrapper a {
+    background-size: 100% 200% !important;
+    background-position: top !important;
+    transition: background-position 0.3s ease-in-out;
+    display: block;
+    float: left
+}
+
+.footer-sticky .buttons-wrapper a:hover {
+    background-image: linear-gradient(to top, #0052a0 50%, transparent 50%) !important;
+    color: #fff;
+    background-position: bottom !important;
+    background-color: transparent;
+}

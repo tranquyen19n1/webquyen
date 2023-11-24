@@ -1,0 +1,659 @@
+
+.logo {
+    width: 680px;
+    height: 68px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+    background: transparent url('/public/css/frontend/img/vui_logo.png') no-repeat scroll 0 0
+}
+
+#search_wrapper {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 10%);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 10%)
+}
+
+#search_wrapper input[type="text"] {
+    background: none;
+    width: 181px;
+    height: 25px;
+    border: 0;
+    padding: 3px 5px;
+    outline: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.search_icon_wrapper {
+    outline: 0;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    vertical-align: middle
+}
+
+.search_icon {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out
+}
+
+.search_icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg),translate3d(0,0,0);
+    -moz-transform: rotate(0deg),translate3d(0,0,0);
+    -o-transform: rotate(0deg),translate3d(0,0,0);
+    transform: rotate(0deg),translate3d(0,0,0);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    background: #777
+}
+
+.search_icon span:nth-child(1) {
+    top: -1px;
+    left: -1px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #777;
+    background: none !important
+}
+
+.search_icon span:nth-child(2) {
+    width: 45%;
+    height: 2px;
+    left: auto;
+    right: -2px;
+    top: calc(100% - 3px);
+    border-radius: 5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.search_icon span:nth-child(3) {
+    width: 45%;
+    height: 2px;
+    left: auto;
+    right: -2px;
+    top: calc(100% - 3px);
+    border-radius: 5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#myModal button.close {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: -10px -10px 0 0;
+    z-index: 11;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.share-button-wrapper {
+    text-align: right
+}
+
+.share-button {
+    width: 28px;
+    height: 28px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 7px
+}
+
+.share-button:hover {
+    text-decoration: none;
+    background: #ddd
+}
+
+#branding {
+    padding: 18px 0
+}
+
+.brand-site-name {
+    margin: 5px 0
+}
+
+.brand-site-name a {
+    display: block
+}
+
+.secondary_navigation {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: auto;
+    display: table
+}
+
+.secondary_navigation .container {
+    position: relative
+}
+
+.secondary_navigation .user-panel,.secondary_navigation .toolbar {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.user-panel {
+    margin: 0;
+    padding: 0 0 0 70px;
+    list-style: none
+}
+
+.user-panel li {
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: normal
+}
+
+.user-panel a {
+    padding: 2px 0;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    position: relative
+}
+
+.user-panel a:hover {
+    color: #007bff
+}
+
+.user-panel span {
+    vertical-align: middle;
+    margin-right: 3px
+}
+
+
+.toolbar {
+    font-size: 13px;
+    padding: 0 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1
+}
+
+.language-panel {
+    margin-bottom: 5px
+}
+
+.language-panel a:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #333;
+    margin-left: 3px
+}
+
+.chooseLanguage {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.chooseLanguage li {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 3px;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -ms-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out
+}
+
+.chooseLanguage li:first-child {
+    margin-top: 0
+}
+
+.chooseLanguage li:last-child {
+    margin-bottom: 0
+}
+
+.chooseLanguage li:hover,.chooseLanguage li:focus {
+    background: #0661b7;
+    color: #fff
+}
+
+.chooseLanguage [aria-selected=true] {
+    background: #ddd
+}
+
+#slideshow {
+    background: url(/public/css/frontend/img/vui_bg.svg) repeat-x;
+    padding-top: 38px;
+    margin-top: -38px
+}
+
+#slideshow .img-cover {
+    max-height: 350px
+}
+
+
+.submenu-item-has-children a {
+    padding-right: 25px !important
+}
+
+.menu-item-has-children>a::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: -.125em;
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    line-height: inherit;
+    vertical-align: baseline;
+    content: "\f107";
+    margin-left: 0.5em;
+    z-index: 1
+}
+
+.submenu-item-has-children>a::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: -.125em;
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    line-height: inherit;
+    vertical-align: baseline;
+    content: "\f105";
+    margin-left: 1em;
+    right: 20px;
+    top: 50%;
+    position: absolute;
+    z-index: 1
+}
+
+#vui_navigation {
+    position: relative;
+    z-index: 999
+}
+
+.primary_navigation {
+    background: #002b72
+}
+
+.primary_navigation .unicon-home {
+    vertical-align: text-bottom
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+.nav-menu li {
+    border-right: 1px solid #0661b7;
+    font-size: 1em;
+    font-weight: 600;
+    float: left;
+    position: relative
+}
+
+.nav-menu li:last-child {
+    border-right: 0
+}
+
+.nav-menu li a {
+    line-height: 38px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: block
+}
+
+.nav-menu li a:hover,.nav-menu li:hover {
+    background: #0661b7
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    display: none
+}
+
+.nav-menu ul li {
+    font-size: 1em;
+    font-weight: 400;
+    border: 0;
+    margin: 0;
+    padding: 10px 20px 0 20px;
+    cursor: pointer;
+    float: none;
+    display: block;
+    position: relative
+}
+
+.nav-menu ul li:hover {
+    background: none
+}
+
+.nav-menu ul li:last-child {
+    padding-bottom: 20px
+}
+
+.nav-menu ul li a {
+    color: #333;
+    text-transform: none;
+    padding: 5px 0;
+    line-height: normal !important;
+    display: block
+}
+
+.nav-menu ul li a:hover {
+    color: #007bff;
+    background: none;
+    text-decoration: underline
+}
+
+.nav-menu ul ul {
+    width: 225px;
+    left: 100%;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15)
+}
+
+#mainMenu li:hover>ul {
+    visibility: visible;
+    display: block
+}
+
+.sub-menu li {
+    display: inline;
+    width: 100%;
+}
+
+*html .nav-menu ul li a {
+    display: inline-block;
+    width: 100%
+}
+
+.sub-menu {
+    width: 225px;
+    margin: 0 !important;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+}
+
+.toggled-on {
+    visibility: visible !important;
+    max-height: 9999px !important;
+    opacity: 1 !important;
+    display: block !important
+}
+
+.nav-toggle {
+    outline: none;
+    position: absolute;
+    top: 37px;
+    width: 34px;
+    border: 0;
+    background: none;
+    color: #888;
+    padding: 0;
+    line-height: 34px;
+    text-align: left;
+    z-index: 110;
+    display: none
+}
+
+.nav-toggle:before {
+    content: "\f0c9";
+    position: relative;
+    font: normal normal normal 24px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.nav-toggle.active:before {
+    content: "\f00d"
+}
+
+.handheld_navigation {
+    position: inherit;
+    z-index: 10;
+    display: none
+}
+
+.handheld_navigation .nav-menu {
+    z-index: 10;
+    padding: 25px 25px 25px 45px;
+    width: 80%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: visible;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.handheld_navigation .nav-menu li {
+    float: none;
+    border: 0;
+    font-size: 1em
+}
+
+.handheld_navigation .nav-menu li a {
+    color: #333 !important;
+    font-size: 1em;
+    background: none;
+    border: 0 !important
+}
+
+.handheld_navigation .nav-menu li a:hover, .handheld_navigation .nav-menu li:hover, .handheld_navigation .nav-menu .active a {
+    background: none
+}
+
+.handheld_navigation .nav-menu ul {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding-left: 25px
+}
+
+.handheld_navigation .nav-menu ul li {
+    padding: 0;
+    font-size: 1em
+}
+
+.handheld_navigation .nav-menu ul li a {
+    color: #333;
+    background: none;
+    position: relative
+}
+
+.handheld_navigation .nav-menu li:last-child, .handheld_navigation .nav-menu ul li:last-child {
+    border: 0 !important
+}
+
+.handheld_navigation .nav-menu ul ul {
+    width: 100%;
+    margin: 0;
+    padding-left: 25px;
+    left: 0;
+    visibility: hidden;
+    display: none
+}
+
+.handheld_navigation .nav-menu ul ul, .handheld_navigation .sub-menu {
+    z-index: inherit;
+    background: none;
+    box-shadow: none
+}
+
+.handheld_navigation .sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0
+}
+
+.handheld_navigation .submenu-item-has-children>a::after {
+    content: ""
+}
+
+.handheld_navigation .menu-item-has-children>a::after {
+    content: ""
+}
+
+.handheld_navigation .submenu-item-has-children>a:hover::after, .handheld_navigation .menu-item-has-children>a:hover::after {
+    content: ""
+}
+
+.handheld_navigation .dropdown-toggle {
+    background: none;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block
+}
+
+.handheld_navigation .dropdown-toggle::after {
+    width: 20px;
+    height: 26px;
+    margin-left: 0;
+    content: "\f107" !important;
+    border: 0;
+    font: 400 normal normal 16px/1 FontAwesome;
+    line-height: inherit;
+    vertical-align: baseline
+}
+
+
+button.toggled-on::after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal!important
+}
+
+.left-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.left-menu li {
+    position: relative;
+    border-top: 1px solid #ddd
+}
+
+.left-menu li a {
+    color: #333;
+    display: block;
+    padding: 10px 0
+}
+
+.left-menu li a:hover {
+    background: #ddd;
+    text-decoration: none
+}
+
+.left-menu li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.left-menu ul li {
+    position: relative
+}
+
+.left-menu ul li a {
+    padding-left: 25px
+}
+
+
+.left-menu li:hover ul {
+    display: block
+}
+
+.left-menu .menu-item-has-children>a::after {
+    position: absolute;
+    right: 0
+}
